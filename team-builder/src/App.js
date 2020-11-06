@@ -12,8 +12,10 @@ function App() {
       email: formData.email,
       role: formData.role,
     };
-    console.log(addNewPerson);
+
     setForm([form, newPerson]);
+    console.log(addNewPerson);
+    console.log(form);
   };
   return (
     <div className='App'>

@@ -18,7 +18,7 @@ const Form = (props) => {
   };
   return (
     <div>
-      <form>
+      <form onSubmit={submitForm}>
         <label>
           Name:
           <input
@@ -48,8 +48,9 @@ const Form = (props) => {
             onChange={changeHandler}
           />
         </label>
+        <br />
+        <button type='submit'>Add New Note</button>
       </form>
-      <button onClick={submitForm}>Add New Note</button>
     </div>
   );
 };
